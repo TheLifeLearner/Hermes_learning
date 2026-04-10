@@ -1,0 +1,23 @@
+title: LifeLearnerLab
+description: Documentation and guides for setting up AI agents, VPS security, and hands-on tech learning.
+baseurl: "/lifelearnerlab-docs"
+url: ""
+
+# Theme
+theme: minima
+
+# Navigation
+header_pages:
+  - index.md
+  - docs/vps-setup.md
+  - docs/hermes-setup.md
+
+# Markdown settings
+markdown: kramdown
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
