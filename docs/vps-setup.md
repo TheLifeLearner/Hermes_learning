@@ -1,48 +1,43 @@
 ---
 layout: page
-title: VPS Setup & Security Guide
+title: VPS Setup & Security Step by Step Guide
 permalink: /docs/vps-setup/
 ---
 
 # Setting Up and Securing an Ubuntu VPS
 
-A practical guide for deploying and hardening an Ubuntu VPS. Written for Windows users with WSL, but works from any Linux or macOS terminal.
+This is one on of the first steps if you want to host your own AI agent like Hermes. I dind't find a full breakdown on how to get things setup so this guide is to provide a step by step process of setting up a VPS server. The directions are based on Raff Technologies since thats what I picked to host my learning/education VM.
+### Disclaimer - There are eaiser ways to deploy an application I just prefer to have more contol over the process and its helpful for learning
 
 ## Prerequisites
 
-- Windows 10 (2004+) or Windows 11 with WSL 2 installed
-- A VPS provider account (DigitalOcean, Linode, Vultr, Hetzner, etc.)
-- ~30 minutes
+- Windows 11 (The current version of Windows already includes ssh or you can use WSL2)
+- A VPS provider account (Direction are based on setting up VPS under Raff Technologies)
+    - You can also use any of these also. (DigitalOcean, Linode, Vultr, Hetzner, etc.)
+- A public/private key
 
-## Step 1: Set Up WSL (if not done)
 
-Open PowerShell as admin and run:
+## Step 1: Generate SSH Key
 
-```
-wsl --install -d Ubuntu-22.04
-```
-
-Restart your machine. Open Windows Terminal, select Ubuntu, and verify:
+Open PowerShell and run:
 
 ```
-lsb_release -a
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa
 ```
 
-## Step 2: Generate SSH Key
-
-In your WSL terminal:
-
-```
-ssh-keygen -t ed25519 -C "your_email@example.com"
-```
-
-## Step 3: Deploy Your VPS
-
+## Step 2: Deploy Your VPS
+The directions below are related to setting up  VPS on https://rafftechnologies.com/. You can use any provider.
+- Sign up for an account with the provider
+- Optional - But recommended (Best security practices)
+    - Click on Settings on the left hand side
+    - Click theEnable MFA: Find the option for "Multi-Factor Authentication" and follow the on-screen instructions to enable it.
+    - Complete the setup: Follow any additional prompts to complete the setup process.
 - Create an Ubuntu 22.04 LTS instance on your provider
+- https://help.rafftechnologies.com/en/articles/11151971-quick-start-launching-your-first-vm
 - Choose the smallest plan ($4-6/mo)
 - Copy your SSH public key to the provider's web console
 
-## Step 4: Initial Server Setup
+## Step 3: Initial Server Setup
 
 SSH into your VPS as root:
 
@@ -57,7 +52,7 @@ apt update && apt upgrade -y
 apt install -y vim curl wget git ufw fail2ban
 ```
 
-## Step 5: Create a Non-Root User
+## Step 4: Create a Non-Root User
 
 ```
 adduser yourusername
@@ -68,7 +63,7 @@ chown -R yourusername:yourusername /home/yourusername/.ssh
 
 Test: `ssh yourusername@your_vps_ip`
 
-## Step 6: Harden SSH
+## Step 5: Harden SSH
 
 Edit `/etc/ssh/sshd_config`:
 
@@ -86,7 +81,7 @@ sudo sshd -t
 sudo systemctl reload sshd
 ```
 
-## Step 7: Configure Firewall
+## Step 6: Configure Firewall
 
 ```
 sudo ufw allow 22/tcp
@@ -94,7 +89,7 @@ sudo ufw enable
 sudo ufw status verbose
 ```
 
-## Step 8: Enable Fail2Ban
+## Step 7: Enable Fail2Ban
 
 ```
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
@@ -107,7 +102,7 @@ sudo systemctl restart fail2ban
 sudo fail2ban-client status sshd
 ```
 
-## Step 9: Verify
+## Step 8: Verify
 
 - [x] SSH login works with your user
 - [x] Root login is denied
