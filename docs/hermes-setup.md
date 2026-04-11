@@ -3,74 +3,65 @@ layout: page
 title: Hermes Agent Setup
 permalink: /docs/hermes-setup/
 ---
+# You made to the fun part and have a secure VPS server now
+
+*If you're still wondering what is the best way to explain AI agents and other AI terms check out [VPS Setup & Security Guide](/docs/vps-setup/)*
 
 # Hermes Agent Setup
 
 Install and configure a Hermes AI agent on your VPS.
+    - Other doumentation you can use that is very helpful [Hermes Docs](https://hermes-agent.nousresearch.com/docs/) 
 
 *This guide assumes you have completed the [VPS Setup & Security Guide](/docs/vps-setup/) first.*
+
+## Disclaimer
+- The directions are based on you wanting to use Discord as an interace to talk to your Hermes agent
+    - Hermes offers other options also listed here [Messaging Gateway Options](https://hermes-agent.nousresearch.com/docs/user-guide/messaging)
+- As for cost realted to LLMs you can control cost by using the following below. The directions assume you don't have a ChatGPT subscription and fine with purchasing a $10 credit with OpenRouter. The directions will show you how to select a free LLM model. The credit just will allow you to use a different model if you so choose.
+    - ChatGPT Plus subscription - This helps provide you with a flat rate fee [ChatGPT pricing](https://chatgpt.com/pricing)
+    - OpenRouter - This option also allows you to just purchase a one time credit that can be used with multiple LLMs [OpenRouter](https://openrouter.ai/)
 
 ## Prerequisites
 
 - A secured Ubuntu VPS with SSH access
-- An OpenRouter account with API key ([openrouter.ai](https://openrouter.ai))
-- (Optional) Discord or Telegram bot token for notifications
+- LLM provider: You need to have something so Hermes has a brain.
+    - An OpenRouter account with API key ([openrouter.ai](https://openrouter.ai)) (optional)
+    - Chatgpt plus subscription (optional)
+    - Hermes creator company: They are also an LLM provider you can use [Nousresearch](https://portal.nousresearch.com/login)
+- Discord or Telegram accounts (optional)- Hermes support quite a few messaging options or you can use the Hermes TUI on the VPS
+
+## Step 0: Prepare API keys and Discord Account 
+*You can do these steps in the middle of setting up Hermes since it will ask you for the information or you can do it after. I find it better to do it before the install so you can copy and paste the info as requested. But its up to you.*
+- Discord prep
+- OpenRouter prep
 
 ## Step 1: Install Hermes
 
 SSH into your VPS:
 
 ```
-ssh yourusername@your_vps_ip
+ssh <yourusername>@your_vps_ip
 ```
 
 Follow the official Hermes installation docs to download and install the binary.
+ - https://hermes-agent.nousresearch.com/
 
+- Below is a breakdown of the install wizard: Hermes is updating alot so this is subject to change but should help
+    - 
 Verify:
 
 ```
 hermes --version
 ```
 
-## Step 2: Configure API Keys
+## Other helpful info
 
-Create a `.env` file in your Hermes config directory:
-
-```
-OPENROUTER_API_KEY=your_key_here
-```
-
-Lock it down:
-
-```
-chmod 600 .env
-```
-
-**Never commit your `.env` file to git.**
-
-## Step 3: Choose a Model
-
-Start with a free or low-cost model on OpenRouter to keep costs minimal. Edit your Hermes config to set the default model, then test with a simple prompt.
-
-## Step 4: Connect Messaging (Optional)
-
-Add your Discord bot token or Telegram token to `.env`. Test by sending a message from the agent.
-
-## Step 5: Run on Boot (Optional)
-
-Create a systemd service for Hermes so it starts automatically:
-
-```
-sudo systemctl enable hermes
-sudo systemctl start hermes
-sudo systemctl status hermes
-```
-
-## Verify
-
-- [x] Hermes responds to prompts
-- [x] API key is stored securely (not hardcoded)
-- [x] (Optional) Agent sends notifications to Discord/Telegram
+- Discord - https://github.com/NousResearch/hermes-agent
+- Github - https://github.com/NousResearch/hermes-agent
+- Hermes Creator - https://nousresearch.com/
+- Reddit
+    - https://www.reddit.com/r/hermesagent/
+    - https://www.reddit.com/r/nousresearch/
 
 ## Cost Estimate
 
