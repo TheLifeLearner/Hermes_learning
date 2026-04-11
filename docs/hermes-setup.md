@@ -47,18 +47,22 @@ Follow the official Hermes installation docs to download and install the binary.
  - https://hermes-agent.nousresearch.com/
     - On the site it list an install link you can use to start the setup on your VPS server. Copy the link
     - Go back to your server and paste the link and press enter
+    ![alt text](../images/hermes-setup/HRM_01.png)
 
 - Below is a breakdown of the install wizard: Hermes is updating alot so this is subject to change but should help
     - Install ripgrep for faster file search ffmpeg for TTS voice messages? [Y/n] `Enter`
         - You will be prompted for your sudo password to install the application
     - Quick setup — provider, model & messaging (recommended) - `Enter`
+    ![alt text](../images/hermes-setup/HRM_02.png)
     - Select provider: - `This is where you need yor LLM provider api key or Chatgpt login`
     - Connect a messaging platform? (Telegram, Discord, etc.) - `This is where you need your Discord info`
+    ![alt text](../images/hermes-setup/HRM_03.png)
         - Set up messaging now (recommended) - `Enter`
         - Arrown down to Discord and press spacebar the Enter button
+        ![alt text](../images/hermes-setup/HRM_04.png)
             - Discord bot token: `Enter token`
     - Launch hermes chat now? [Y/n]: `Enter`
-
+![alt text](../images/hermes-setup/HrM_05.png)
 
 Verify:
 
@@ -66,7 +70,7 @@ Verify:
 hermes --version
 ```
 # Test a prompt to see if everything is working
-
+![alt text](../images/hermes-setup/HRM_test.png)
 
 ## Other helpful info
 
@@ -77,8 +81,3 @@ hermes --version
     - https://www.reddit.com/r/hermesagent/
     - https://www.reddit.com/r/nousresearch/
 
-## Cost Estimate
-
-Smallest VPS + free OpenRouter models = **under $10/month** to run your own AI agent.
-
----
