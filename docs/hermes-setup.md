@@ -45,14 +45,28 @@ ssh <yourusername>@your_vps_ip
 
 Follow the official Hermes installation docs to download and install the binary.
  - https://hermes-agent.nousresearch.com/
+    - On the site it list an install link you can use to start the setup on your VPS server. Copy the link
+    - Go back to your server and paste the link and press enter
 
 - Below is a breakdown of the install wizard: Hermes is updating alot so this is subject to change but should help
-    - 
+    - Install ripgrep for faster file search ffmpeg for TTS voice messages? [Y/n] `Enter`
+        - You will be prompted for your sudo password to install the application
+    - Quick setup — provider, model & messaging (recommended) - `Enter`
+    - Select provider: - `This is where you need yor LLM provider api key or Chatgpt login`
+    - Connect a messaging platform? (Telegram, Discord, etc.) - `This is where you need your Discord info`
+        - Set up messaging now (recommended) - `Enter`
+        - Arrown down to Discord and press spacebar the Enter button
+            - Discord bot token: `Enter token`
+    - Launch hermes chat now? [Y/n]: `Enter`
+
+
 Verify:
 
 ```
 hermes --version
 ```
+# Test a prompt to see if everything is working
+
 
 ## Other helpful info
 

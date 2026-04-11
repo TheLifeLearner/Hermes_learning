@@ -49,6 +49,7 @@ The directions below are related to setting up  VPS on https://rafftechnologies.
     - Click theEnable MFA: Find the option for "Multi-Factor Authentication" and follow the on-screen instructions to enable it.
     - Complete the setup: Follow any additional prompts to complete the setup process.
 - Click on "+ Create" on the top right hand corner
+- Click on "Create Instance"
     - Region: At the time of this writing there is only one region
     - OS Template: Unbuntu
         - Version: 24.04x64
@@ -65,11 +66,18 @@ The directions below are related to setting up  VPS on https://rafftechnologies.
     - Hostnames:
         - VM 1: Enter the name of the server
 - Click Proceed to Checkout
+- Wait for the VPN to be created
+- Once complete you will see it listed with a public ip address so you can login
 
 ## Step 3: Initial Server Setup
 
 SSH into your VPS as root:
+Open powershell on your compuer and type the command
 
+```
+ssh root@your_vps_ip
+```
+If the first command does not work you may have to point to the shh key pair
 ```
 ssh -i ~/.ssh/id_ed25519 root@your_vps_ip
 ```
@@ -80,6 +88,9 @@ Update and install essentials:
 
 ```
 apt update && apt upgrade -y
+```
+Install the essentials applications:
+```
 apt install -y vim curl wget git ufw fail2ban
 ```
 - Lets setup a user account that is not root
@@ -87,7 +98,6 @@ apt install -y vim curl wget git ufw fail2ban
 
 ```
 adduser <yourusername>
-passwd <username>
 usermod -aG sudo <yourusername>
 cp -r ~/.ssh /home/<yourusername>/
 chown -R <yourusername>:<yourusername> /home/<yourusername>/.ssh
@@ -104,12 +114,10 @@ Test: `ssh yourusername@your_vps_ip`
 ```
 PermitRootLogin no
 PasswordAuthentication no
-PubkeyAuthentication yes
-AllowUsers yourusername
 ```
 To save press the following on the keyboard
-`Ctrl + O`
-`Ctrl + X`
+`Ctrl + O` then press `Enter`
+`Ctrl + X` then press `Enter` to exit
 
 - Type the command below to restart and verify the ssh service
 ```
@@ -136,13 +144,16 @@ sudo systemctl status fail2ban
 sudo fail2ban-client status sshd
 ```
 
-## Step 8: Verify
+## Step 8: Things you completed
 
 - [x] SSH login works with your user
 - [x] Root login is denied
 - [x] Password auth is denied
 - [x] Firewall is active
 - [x] Fail2Ban is running
+
+## Step 9: Have fun and explore
+
 
 ## Maintenance
 The Cool thing is you can have Hermes create a job to perform weekly mainteance like 
