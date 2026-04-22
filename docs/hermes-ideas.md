@@ -19,6 +19,7 @@ Below are just some of the things I used my Hermes agent for. Once you see it in
 
 - Used Hermes to backup its config and schedule it to happen daily
     ![alt text](../images/hermes-setup/H_ideas01.png)
+    
 - Used Hermes to check server host performance
     - ```Please check the server you're on and tell me the memory and CPU usage```
 
