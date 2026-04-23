@@ -161,8 +161,8 @@ To save press the following on the keyboard
 - Type the command below to restart and verify the ssh service
 ```
 sudo sshd -t
-sudo systemctl reload sshd
-sudo systemctl status sshd
+sudo systemctl reload ssh
+sudo systemctl status ssh
 ```
 ![alt text](../images/vps-setup/VPS_SSH18.png)
 
