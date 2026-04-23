@@ -1,3 +1,11 @@
+---
+layout: page
+title: OpenRouter Prep
+parent: Hermes Agent Setup
+nav_order: 2
+permalink: /docs/openrouter-prep/
+---
+
 # Openrouter Prep
 
 ## More information on Hermes AI provider - https://hermes-agent.nousresearch.com/docs/integrations/providers

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Hermes Agent Setup
+nav_order: 3
 permalink: /docs/hermes-setup/
 ---
 # You made to the fun part and have a secure VPS server now

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: AI Architecture terms
+title: AI Architecture Terms
+nav_order: 4
 permalink: /docs/AI-Architecture-terms/
 ---
 # Easy way to breakdown all of AI Architecture terms: The Uber Analogy

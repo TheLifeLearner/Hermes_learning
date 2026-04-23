@@ -1,3 +1,11 @@
+---
+layout: page
+title: Discord Prep
+parent: Hermes Agent Setup
+nav_order: 1
+permalink: /docs/discord-prep/
+---
+
 # Discord Prep
 
 ## The directions are based off the office directions - https://hermes-agent.nousresearch.com/docs/user-guide/messaging/discord

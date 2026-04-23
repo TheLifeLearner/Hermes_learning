@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Hermes Agent Setup
+title: Hermes Agent Ideas
+nav_order: 5
 permalink: /docs/hermes-ideas/
 ---
 

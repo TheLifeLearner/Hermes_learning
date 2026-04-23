@@ -1,6 +1,7 @@
 ---
 layout: page
-title: VPS Setup & Security Step by Step Guide
+title: VPS Setup & Security Guide
+nav_order: 2
 permalink: /docs/vps-setup/
 ---
 ## Cost Estimate

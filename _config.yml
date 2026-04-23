@@ -4,13 +4,17 @@ baseurl: "/Hermes_learning"
 url: ""
 
 # Theme
-theme: minima
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
 
-# Navigation
-header_pages:
-  - index.md
-  - docs/vps-setup.md
-  - docs/hermes-setup.md
+# Just the Docs settings
+search_enabled: true
+color_scheme: dark
+heading_anchors: true
+nav_sort: case_insensitive
+back_to_top: true
+back_to_top_text: "Back to top"
 
 # Markdown settings
 markdown: kramdown
