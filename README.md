@@ -1,25 +1,31 @@
 # Hermes Learning Docs
 
-Documentation site built with Jekyll, hosted on GitHub Pages.
+Documentation site built with Jekyll + GitHub Pages.
 
-## Pages
+## Main Pages
 
+- [Home](index.md)
 - [VPS Setup & Security Guide](docs/vps-setup.md)
 - [Hermes Agent Setup](docs/hermes-setup.md)
+- [Discord Prep](docs/Discord-prep.md)
+- [OpenRouter Prep](docs/OpenRouter-prep.md)
+- [AI Architecture Terms](docs/AI-Architecture-terms.md)
+- [Hermes Agent Ideas](docs/hermes-ideas.md)
 
-## Local Development
+## Local Development (optional)
 
-```
+```bash
 bundle install
 bundle exec jekyll serve
 ```
 
-Or just push to `main` and GitHub Pages builds it automatically.
+Or push to `main` and let GitHub Pages build automatically.
 
 ## Structure
 
-```
+```text
 _config.yml       # Jekyll config
-index.md          # Homepage
+index.md          # Landing page
 docs/             # Documentation pages
+assets/css/       # Custom styling
 ```

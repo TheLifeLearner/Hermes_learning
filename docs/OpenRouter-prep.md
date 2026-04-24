@@ -8,10 +8,14 @@ permalink: /docs/openrouter-prep/
 
 # OpenRouter Prep
 
-## More information on Hermes AI providers - https://hermes-agent.nousresearch.com/docs/integrations/providers
+Collect your OpenRouter credentials before running Hermes setup.
 
-*The key thing is to copy the token and user IDs needed to a notepad or password manager. You will be prompted during install.*
+Provider docs: <https://hermes-agent.nousresearch.com/docs/integrations/providers>
+
+## Value to save
+
 | Name | Value |
 | :--- | :--- |
-| **OpenRouter** | OPENROUTER_API_KEY |
----
+| OpenRouter | `OPENROUTER_API_KEY` |
+
+> Store the API key in a password manager or secure note for quick copy/paste during setup.

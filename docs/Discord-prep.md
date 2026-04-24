@@ -8,14 +8,18 @@ permalink: /docs/discord-prep/
 
 # Discord Prep
 
-## These directions are based on the official guide - https://hermes-agent.nousresearch.com/docs/user-guide/messaging/discord
+Use this checklist to gather everything Hermes needs before setup.
 
-*The key thing is to copy the token and user IDs needed to a notepad or password manager. You will be prompted during install.*
-| Name | Value |
+Official guide: <https://hermes-agent.nousresearch.com/docs/user-guide/messaging/discord>
+
+## Collect these values
+
+| Step | Value to Save |
 | :--- | :--- |
-| **Step 1: Create a Discord Application** | Application ID |
-| **Step 4: Get the Bot Token** | Token |
-| **Step 5: Generate the Invite URL** | Copy URL |
-| **Step 7: Find Your Discord User ID** | User ID |
-| **Home Channel (Optional)** | Home ID |
----
+| Create Discord application | Application ID |
+| Create bot / token step | Bot Token |
+| Generate invite URL | Invite URL |
+| Enable Developer Mode + copy your ID | User ID |
+| Optional home channel | Channel ID |
+
+> Save these in a password manager or secure note so setup is fast and accurate.

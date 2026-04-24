@@ -4,27 +4,31 @@ title: AI Architecture Terms
 nav_order: 4
 permalink: /docs/AI-Architecture-terms/
 ---
-# Easy way to break down AI architecture terms: The Uber analogy
 
-| Term | Simple Definition | The Uber Analogy |
+# AI Architecture Terms (Simple Analogies)
+
+If these terms feel abstract, use the analogies below to make them stick.
+
+## Analogy 1: Uber
+
+| Term | Simple Definition | Uber Analogy |
 | :--- | :--- | :--- |
-| **LLM Model** | The brain of the agent | **The GPS Software:** It contains the maps and "knowledge" of the world. It provides the best path forward but cannot physically steer the car. |
-| **Agent** | It does the work | **The Driver:** The person behind the wheel who listens to the GPS, watches the road, and performs the actual work of driving to complete the trip. |
-| **LLM Provider** | The way to use the model | **The Uber Platform:** The company (like OpenAI or Google) that provides the app, servers, and infrastructure to make the service available. |
+| **LLM Model** | The reasoning engine | **GPS software:** maps and directions, but it cannot drive the car. |
+| **Agent** | The executor | **Driver:** uses the GPS plus tools to complete the trip. |
+| **LLM Provider** | The access layer | **Uber platform:** supplies the app and infrastructure that make the service available. |
+
+### Why this distinction matters
+
+- **Model** provides logic and knowledge.
+- **Agent** performs actions using tools.
+- **Provider** gives hosted access to models.
 
 ---
 
-#### Why this distinction matters:
-* **The Model (GPS)** provides the *logic* and *information*.
-* **The Agent (Driver)** provides the *execution* and *tool-use*.
-* **The Provider (Uber)** provides the *access* and *hosting*.
+## Analogy 2: Home Builder
 
----
-
-### AI Architecture: The Home Builder Analogy
-
-| Term | Simple Definition | The Construction Analogy |
+| Term | Simple Definition | Construction Analogy |
 | :--- | :--- | :--- |
-| **LLM Model** | The brain of the agent | **The Blueprints:** The detailed intelligence and "plans" for the house. It contains all the math and design, but a piece of paper can't hammer a nail. |
-| **Agent** | It does the work | **The Contractor:** The person who reads the blueprints and uses tools (hammers, saws, drills) to actually build the structure. The agent turns the plan into reality. |
-| **LLM Provider** | The way to use the model | **The Tool Rental / Supply Yard:** The company that provides the heavy machinery and the "power" required to execute the blueprints at scale. |
+| **LLM Model** | The reasoning engine | **Blueprints:** detailed plan and intelligence, but no direct execution. |
+| **Agent** | The executor | **Contractor:** reads the plans and uses tools to build. |
+| **LLM Provider** | The access layer | **Equipment/supply yard:** provides the systems needed to execute at scale. |

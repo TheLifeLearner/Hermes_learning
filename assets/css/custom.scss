@@ -1,6 +1,7 @@
 ---
 ---
 
+/* Screenshot polish (global docs images) */
 .main-content img {
   border: 1px solid #2f3640;
   border-radius: 12px;
@@ -11,5 +12,98 @@
 
 .main-content img:hover {
   transform: translateY(-1px);
+  transition: 0.2s ease;
+}
+
+/* Landing page hero */
+.hero {
+  margin: 0.75rem 0 1.4rem;
+  padding: 1.2rem 1.15rem;
+  border: 1px solid #303746;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #101522 0%, #0f1117 65%);
+}
+
+.hero h1 {
+  margin: 0.45rem 0 0.55rem;
+  line-height: 1.1;
+}
+
+.hero p {
+  margin: 0;
+  color: #c6cfde;
+  max-width: 760px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: #b7ccff;
+  border: 1px solid #3a4b6f;
+  background: rgba(70, 111, 193, 0.2);
+}
+
+.hero-cta-row {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.45rem 0.8rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: #2f66f3;
+  color: #ffffff !important;
+  border: 1px solid #2f66f3;
+}
+
+.btn-outline {
+  color: #d7deec !important;
+  border: 1px solid #3a4254;
+  background: #151923;
+}
+
+/* Quick cards */
+.quick-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+  margin: 0.55rem 0 1.15rem;
+}
+
+.quick-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #2f3642;
+  border-radius: 12px;
+  padding: 0.85rem 0.9rem;
+  background: #0f131c;
+}
+
+.quick-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.quick-card p {
+  margin: 0;
+  color: #bcc6d7;
+  font-size: 0.92rem;
+}
+
+.quick-card:hover {
+  border-color: #4463a8;
+  transform: translateY(-2px);
   transition: 0.2s ease;
 }
