@@ -264,8 +264,8 @@ Validation checkpoint:
 
 ## Step 9: Explore next steps
 
-- Ideas: [Hermes Agent Ideas](/docs/hermes-ideas/)
-- Next setup guide: [Hermes Agent Setup](/docs/hermes-setup/)
+- Ideas: [Hermes Agent Ideas]({{ '/docs/hermes-ideas/' | relative_url }})
+- Next setup guide: [Hermes Agent Setup]({{ '/docs/hermes-setup/' | relative_url }})
 
 ## Maintenance
 

@@ -9,7 +9,7 @@ permalink: /docs/hermes-setup/
 
 Install and configure Hermes on your VPS with a budget-friendly, security-aware approach.
 
-- Prerequisite: [VPS Setup & Security Guide](/docs/vps-setup/)
+- Prerequisite: [VPS Setup & Security Guide]({{ '/docs/vps-setup/' | relative_url }})
 - Official docs: <https://hermes-agent.nousresearch.com/docs/>
 
 ## Quick context
@@ -43,8 +43,8 @@ You can keep costs controlled by using free/low-cost model options.
 
 It is easiest if you collect credentials first:
 
-- [Discord Prep](/docs/discord-prep/)
-- [OpenRouter Prep](/docs/openrouter-prep/)
+- [Discord Prep]({{ '/docs/discord-prep/' | relative_url }})
+- [OpenRouter Prep]({{ '/docs/openrouter-prep/' | relative_url }})
 
 ## Step 1: Install Hermes
 

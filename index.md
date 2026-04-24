@@ -11,30 +11,30 @@ nav_order: 1
     Practical guides for building AI agents, securing VPS infrastructure, and growing real-world engineering skills.
   </p>
   <div class="hero-cta-row">
-    <a class="btn btn-primary" href="/docs/vps-setup/">Start with VPS Security</a>
-    <a class="btn btn-outline" href="/docs/hermes-setup/">Set Up Hermes</a>
+    <a class="btn btn-primary" href="{{ '/docs/vps-setup/' | relative_url }}">Start with VPS Security</a>
+    <a class="btn btn-outline" href="{{ '/docs/hermes-setup/' | relative_url }}">Set Up Hermes</a>
   </div>
 </div>
 
 ## Quick Start Path
 
 <div class="quick-cards">
-  <a class="quick-card" href="/docs/vps-setup/">
+  <a class="quick-card" href="{{ '/docs/vps-setup/' | relative_url }}">
     <h3>1) VPS Setup &amp; Security</h3>
     <p>Provision Ubuntu, lock down SSH, configure UFW, and enable Fail2Ban.</p>
   </a>
 
-  <a class="quick-card" href="/docs/hermes-setup/">
+  <a class="quick-card" href="{{ '/docs/hermes-setup/' | relative_url }}">
     <h3>2) Hermes Agent Setup</h3>
     <p>Install Hermes, connect a provider, and launch chat from your server.</p>
   </a>
 
-  <a class="quick-card" href="/docs/discord-prep/">
+  <a class="quick-card" href="{{ '/docs/discord-prep/' | relative_url }}">
     <h3>3) Discord Prep</h3>
     <p>Collect the required Discord IDs and token before onboarding.</p>
   </a>
 
-  <a class="quick-card" href="/docs/openrouter-prep/">
+  <a class="quick-card" href="{{ '/docs/openrouter-prep/' | relative_url }}">
     <h3>4) OpenRouter Prep</h3>
     <p>Prepare API access details and keep model costs under control.</p>
   </a>
@@ -43,12 +43,12 @@ nav_order: 1
 ## Reference and Ideas
 
 <div class="quick-cards">
-  <a class="quick-card" href="/docs/AI-Architecture-terms/">
+  <a class="quick-card" href="{{ '/docs/AI-Architecture-terms/' | relative_url }}">
     <h3>AI Architecture Terms</h3>
     <p>Simple analogies for model, provider, and agent concepts.</p>
   </a>
 
-  <a class="quick-card" href="/docs/hermes-ideas/">
+  <a class="quick-card" href="{{ '/docs/hermes-ideas/' | relative_url }}">
     <h3>Hermes Agent Ideas</h3>
     <p>Real examples of practical automations and workflows.</p>
   </a>
