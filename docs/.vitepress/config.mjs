@@ -35,10 +35,6 @@ export default defineConfig({
       }
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/virg0411/lifelearnerlab-docs' }
-    ],
-
     footer: {
       message: 'Built for people who learn by doing.',
     },
