@@ -5,10 +5,11 @@ export default defineConfig({
   description: 'Hands-on guides for setting up AI agents, securing VPS servers, and building real-world tech skills.',
 
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]
   ],
 
   themeConfig: {
+    logo: '/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'VPS Setup', link: '/vps-setup' },

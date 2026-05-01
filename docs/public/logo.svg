@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 36">
+  <!-- Braille LLD: ⠇⠇⠙ dot-matrix logo -->
+  <!-- Inactive dots (faint grid) -->
+  <g fill="currentColor" fill-opacity="0.12">
+    <!-- Cell 1 -->
+    <circle cx="4" cy="4" r="2.2"/><circle cx="11" cy="4" r="2.2"/>
+    <circle cx="4" cy="11" r="2.2"/><circle cx="11" cy="11" r="2.2"/>
+    <circle cx="4" cy="18" r="2.2"/><circle cx="11" cy="18" r="2.2"/>
+    <circle cx="4" cy="25" r="2.2"/><circle cx="11" cy="25" r="2.2"/>
+    <!-- Cell 2 -->
+    <circle cx="17" cy="4" r="2.2"/><circle cx="24" cy="4" r="2.2"/>
+    <circle cx="17" cy="11" r="2.2"/><circle cx="24" cy="11" r="2.2"/>
+    <circle cx="17" cy="18" r="2.2"/><circle cx="24" cy="18" r="2.2"/>
+    <circle cx="17" cy="25" r="2.2"/><circle cx="24" cy="25" r="2.2"/>
+    <!-- Cell 3 -->
+    <circle cx="30" cy="4" r="2.2"/><circle cx="37" cy="4" r="2.2"/>
+    <circle cx="30" cy="11" r="2.2"/><circle cx="37" cy="11" r="2.2"/>
+    <circle cx="30" cy="18" r="2.2"/><circle cx="37" cy="18" r="2.2"/>
+    <circle cx="30" cy="25" r="2.2"/><circle cx="37" cy="25" r="2.2"/>
+  </g>
+  <!-- Active dots (bold) -->
+  <g fill="currentColor">
+    <!-- L (cell 1): dots 1,2,3 -->
+    <circle cx="4" cy="4" r="3.4"/>
+    <circle cx="4" cy="11" r="3.4"/>
+    <circle cx="4" cy="18" r="3.4"/>
+    <!-- L (cell 2): dots 1,2,3 -->
+    <circle cx="17" cy="4" r="3.4"/>
+    <circle cx="17" cy="11" r="3.4"/>
+    <circle cx="17" cy="18" r="3.4"/>
+    <!-- D (cell 3): dots 1,4,5 -->
+    <circle cx="30" cy="4" r="3.4"/>
+    <circle cx="37" cy="11" r="3.4"/>
+    <circle cx="37" cy="18" r="3.4"/>
+  </g>
+</svg>
