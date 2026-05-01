@@ -34,38 +34,39 @@ Install and configure a Hermes AI agent on your VPS.
 
 SSH into your VPS:
 
-```
+```bash
 ssh <yourusername>@your_vps_ip
 ```
 
 Follow the official Hermes installation docs to download and install the binary.
  - https://hermes-agent.nousresearch.com/
-    - On the site it list an install link you can use to start the setup on your VPS server. Copy the link
+    - On the site it lists an install link you can use to start the setup on your VPS server. Copy the link
     - Go back to your server and paste the link and press enter
-    ![alt text](/images/hermes-setup/HRM_01.png)
 
-- Below is a breakdown of the install wizard: Hermes is updating alot so this is subject to change but should help
-    - Install ripgrep for faster file search ffmpeg for TTS voice messages? [Y/n] `Enter`
-        - You will be prompted for your sudo password to install the application
-    - Quick setup — provider, model & messaging (recommended) - `Enter`
-    ![alt text](/images/hermes-setup/HRM_02.png)
-    - Select provider: - `This is where you need yor LLM provider api key or Chatgpt login`
-    - Connect a messaging platform? (Telegram, Discord, etc.) - `This is where you need your Discord info`
-    ![alt text](/images/hermes-setup/HRM_03.png)
-        - Set up messaging now (recommended) - `Enter`
-        - Arrown down to Discord and press spacebar the Enter button
-        ![alt text](/images/hermes-setup/HRM_04.png)
-            - Discord bot token: `Enter token`
-    - Launch hermes chat now? [Y/n]: `Enter`
-![alt text](/images/hermes-setup/HrM_05.png)
+### Install Wizard Walkthrough
 
-Verify:
+Hermes is updating alot so this is subject to change but should help:
 
-```
+| Prompt | What to enter |
+| :--- | :--- |
+| Install ripgrep for faster file search ffmpeg for TTS voice messages? | Press `Enter` (yes). You will be prompted for your sudo password |
+| Quick setup -- provider, model & messaging (recommended) | Press `Enter` |
+| Select provider | Choose your LLM provider (this is where you need your API key or ChatGPT login) |
+| Connect a messaging platform? | Choose `Enter` for recommended |
+| Select messaging platform | Arrow down to **Discord** and press `Spacebar` then `Enter` |
+| Discord bot token | Paste your bot token |
+
+After setup completes:
+
+- Launch hermes chat now? [Y/n]: Press `Enter`
+
+### Verify the install
+
+```bash
 hermes --version
 ```
-# Test a prompt to see if everything is working
-![alt text](/images/hermes-setup/HRM_test.png)
+
+Then send a test prompt in Discord or the TUI to confirm everything works.
 
 ## Other helpful info
 
