@@ -36,10 +36,6 @@ export default defineConfig({
       }
     ],
 
-    footer: {
-      message: 'Built for people who learn by doing.',
-    },
-
     search: {
       provider: 'local'
     }
