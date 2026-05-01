@@ -37,7 +37,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '\u2807\u2807\u2819 Built for people who learn by doing.',
+      message: 'Built for people who learn by doing.',
     },
 
     search: {
