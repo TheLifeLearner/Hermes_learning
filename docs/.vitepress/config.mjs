@@ -35,6 +35,15 @@ export default defineConfig({
       }
     ],
 
+    socialLinks: [
+      {
+        icon: {
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 24" fill="none"><rect x="0.5" y="0.5" width="67" height="23" rx="4" stroke="currentColor" stroke-opacity="0.25" fill="currentColor" fill-opacity="0.05"/><text x="8" y="17" font-family="monospace" font-size="14" font-weight="bold" fill="currentColor">LLD</text><text x="40" y="17" font-size="10" fill="currentColor" fill-opacity="0.4">⠇⠇⠙</text></svg>'
+        },
+        link: '/'
+      }
+    ],
+
     footer: {
       message: 'Built for people who learn by doing.',
     },
