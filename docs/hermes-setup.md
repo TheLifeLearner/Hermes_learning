@@ -1,18 +1,13 @@
----
-layout: page
-title: Hermes Agent Setup
-permalink: /docs/hermes-setup/
----
 # You made to the fun part and have a secure VPS server now
 
-*If you're still wondering what is the best way to explain AI agents and other AI terms check out [VPS Setup & Security Guide](/docs/vps-setup/)*
+*If you're still wondering what is the best way to explain AI agents and other AI terms check out [AI Architecture Terms](/ai-architecture-terms)*
 
 # Hermes Agent Setup
 
 Install and configure a Hermes AI agent on your VPS.
     - Other doumentation you can use that is very helpful [Hermes Docs](https://hermes-agent.nousresearch.com/docs/) 
 
-*This guide assumes you have completed the [VPS Setup & Security Guide](/docs/vps-setup/) first.*
+*This guide assumes you have completed the [VPS Setup & Security Guide](/vps-setup) first.*
 
 ## Disclaimer
 - The directions are based on you wanting to use Discord as an interace to talk to your Hermes agent
@@ -32,8 +27,8 @@ Install and configure a Hermes AI agent on your VPS.
 
 ## Step 0: Prepare API keys and Discord Account 
 *You can do these steps in the middle of setting up Hermes since it will ask you for the information or you can do it after. I find it better to do it before the install so you can copy and paste the info as requested. But its up to you.*
-- Discord prep
-- OpenRouter prep
+- [Discord Prep](/discord-prep)
+- [OpenRouter Prep](/openrouter-prep)
 
 ## Step 1: Install Hermes
 
@@ -47,22 +42,22 @@ Follow the official Hermes installation docs to download and install the binary.
  - https://hermes-agent.nousresearch.com/
     - On the site it list an install link you can use to start the setup on your VPS server. Copy the link
     - Go back to your server and paste the link and press enter
-    ![alt text](../images/hermes-setup/HRM_01.png)
+    ![alt text](/images/hermes-setup/HRM_01.png)
 
 - Below is a breakdown of the install wizard: Hermes is updating alot so this is subject to change but should help
     - Install ripgrep for faster file search ffmpeg for TTS voice messages? [Y/n] `Enter`
         - You will be prompted for your sudo password to install the application
     - Quick setup — provider, model & messaging (recommended) - `Enter`
-    ![alt text](../images/hermes-setup/HRM_02.png)
+    ![alt text](/images/hermes-setup/HRM_02.png)
     - Select provider: - `This is where you need yor LLM provider api key or Chatgpt login`
     - Connect a messaging platform? (Telegram, Discord, etc.) - `This is where you need your Discord info`
-    ![alt text](../images/hermes-setup/HRM_03.png)
+    ![alt text](/images/hermes-setup/HRM_03.png)
         - Set up messaging now (recommended) - `Enter`
         - Arrown down to Discord and press spacebar the Enter button
-        ![alt text](../images/hermes-setup/HRM_04.png)
+        ![alt text](/images/hermes-setup/HRM_04.png)
             - Discord bot token: `Enter token`
     - Launch hermes chat now? [Y/n]: `Enter`
-![alt text](../images/hermes-setup/HrM_05.png)
+![alt text](/images/hermes-setup/HrM_05.png)
 
 Verify:
 
@@ -70,7 +65,7 @@ Verify:
 hermes --version
 ```
 # Test a prompt to see if everything is working
-![alt text](../images/hermes-setup/HRM_test.png)
+![alt text](/images/hermes-setup/HRM_test.png)
 
 ## Other helpful info
 
@@ -80,4 +75,3 @@ hermes --version
 - Reddit
     - https://www.reddit.com/r/hermesagent/
     - https://www.reddit.com/r/nousresearch/
-

@@ -1,8 +1,3 @@
----
-layout: page
-title: AI Architecture terms
-permalink: /docs/AI-Architecture-terms/
----
 # Easy way to breakdown all of AI Architecture terms: The Uber Analogy
 
 | Term | Simple Definition | The Uber Analogy |
